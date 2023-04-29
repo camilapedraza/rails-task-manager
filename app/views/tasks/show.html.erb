@@ -1,0 +1,8 @@
+<h2><%= @task.title %></h2>
+<ul>
+  <li style="list-style:none">Status: <%= @task.completed ? 'Completed' : 'Incomplete' %></li>
+  <li style="list-style:none">Description: <%= @task.details %></li>
+  <li style="list-style:none"><%= link_to 'Edit task', edit_task_path(@task) %></li>
+</ul>
+
+<%= link_to "< Back to task list", tasks_path() %>
